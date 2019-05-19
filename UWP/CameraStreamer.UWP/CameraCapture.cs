@@ -37,8 +37,8 @@ namespace Chantzaras.Media.Capture
             _mediaCapture.StartPreviewAsync().GetAwaiter().GetResult();
 
             _previewProperties = _mediaCapture.VideoDeviceController.GetMediaStreamProperties(MediaStreamType.VideoPreview) as VideoEncodingProperties;
-            width = (int)_previewProperties.Width; //ignore passed-in width and height and get the ones from the preview
-            height = (int)_previewProperties.Height;
+            //width = (int)_previewProperties.Width; //ignore passed-in width and height and get the ones from the preview
+           // height = (int)_previewProperties.Height;
 
             while (true)
             {

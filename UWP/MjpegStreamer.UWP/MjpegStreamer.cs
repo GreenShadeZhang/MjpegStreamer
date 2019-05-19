@@ -20,7 +20,7 @@ namespace Chantzaras.Media.Streaming.Mjpeg
     /// </summary>
     public class MjpegStreamer : IImageStreamer, IDisposable
     {
-        public const int DEFAULT_INTERVAL = 50;
+        public const int DEFAULT_INTERVAL = 40;
 
         private StreamSocketListener socketListener;
         private List<StreamSocket> _Clients = new List<StreamSocket>();

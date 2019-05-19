@@ -42,9 +42,9 @@ namespace CameraStreamer.uwp
 
         private void StartServer()
         {
-            _Server = new CameraCaptureStreamer(PreviewControl, 640, 480)
+            _Server = new CameraCaptureStreamer(PreviewControl, 1920, 1080)
             {
-                Interval = 500 //change this value if seeing too much lag (make sure it's not very small, try 100-500)
+                Interval = 40 //change this value if seeing too much lag (make sure it's not very small, try 100-500)
             };
             _Server.Start(port);
         }
@@ -60,7 +60,7 @@ namespace CameraStreamer.uwp
 
         private void linkLabel1_Click(System.Object sender, RoutedEventArgs e)
         {
-            //System.Diagnostics.Process.Start(this.linkLabel1.Content);
+           // System.Diagnostics.Process.Start(this.linkLabel1.Content);
         }
 
         /*
